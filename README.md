@@ -36,4 +36,4 @@ explicit basic_mdspan(ElementType*, IndexType...)
 Please let me know if I’ve missed anything,
 
 Mike   
-```
+
