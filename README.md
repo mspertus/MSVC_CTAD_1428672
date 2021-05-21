@@ -1,5 +1,5 @@
 ## Comments on MSVC Alias Template Deduction Issue 
-I believe Bryce’s example in the following [MSVC Developer Community Issue on mdspan CTAD](https://developercommunity.visualstudio.com/t/Alias-template-argument-deduction-leads/1428672) should work (at least that is the intent).
+I believe Bryce’s example in the linked [MSVC Developer Community Issue on mdspan CTAD](https://developercommunity.visualstudio.com/t/Alias-template-argument-deduction-leads/1428672) should work as he intended.
 
 To avoid ambiguity, I’ve slightly modified Bryce’ godbolt to use `EltType` for the alias and `ElementType` for the guide ([https://godbolt.org/z/aM93PEWcz](https://godbolt.org/z/aM93PEWcz))
 
