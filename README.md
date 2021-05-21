@@ -19,10 +19,10 @@ basic_mdspan(EltType*, IndexType...)
 ```
  Now we form a guide `f'` as follows.
 
-*   over.match.class.deduct/2.1: The function type of `f` is the function type of `g` shown above
-*   over.match.class.deduct/2.2: The template parameters of `f` are the template parameters of the `mdspan` that appear in the deduction (i.e., `EltType`) and the template parameters of `f` that were not deduced (`IndexType` was the only template parameter of the guide that was not deduced)
+*   over.match.class.deduct/2.1: The function type of `f'` is the function type of `g` shown above
+*   over.match.class.deduct/2.2: The template parameters of `f'` are the template parameters of the `mdspan` that appear in the deduction (i.e., `EltType`) and the template parameters of `f` that were not deduced (`IndexType` was the only template parameter of the guide that was not deduced)
 *   over.match.class.deduct/2.3: There is an `is_mdspan` constraint that the template arguments of `mdspan` are deducible from the return type
-*   over.match.class.deduct/2.6: `f' is` explicit`because`f\` is.
+*   over.match.class.deduct/2.6: `f'` is `explicit` because `f` is.
 
 Putting these together gives the following guide   
 ```c++
