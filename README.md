@@ -29,6 +29,7 @@ Putting these together gives the following guide
 template <class ElementType, class... IndexType>
 explicit basic_mdspan(ElementType*, IndexType...)
   -> basic_mdspan<ElementType, extents<__make_dynamic_extent<IndexType>()...>>;
+```
 
  Now line 49 of the godbolt should successfully deduce `double` for `EltType` and `int, int` for `IndexType...`, which clearly satisfies the constraint.
 
